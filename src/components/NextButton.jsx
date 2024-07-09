@@ -1,6 +1,10 @@
 import { ActionTypes } from "../constants/action_types";
+import { useQuiz } from "../hooks/useContext";
 
-function NextButton({ dispatch, isLastQuestion, answerInd }) {
+function NextButton() {
+  const { dispatch, index, answerInd, numQuestions } = useQuiz();
+  const isLastQuestion = index === numQuestions - 1;
+
   function handleClick() {
     if (isLastQuestion) {
       dispatch({ type: ActionTypes.FINISH });
