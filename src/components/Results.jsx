@@ -1,7 +1,11 @@
 import { ActionTypes } from "../constants/action_types";
+import { useQuiz } from "../hooks/useContext";
 
-function Results({ points, totalPoints, highscore, dispatch }) {
-  const percent = ((100 * points) / totalPoints).toFixed(1);
+function Results() {
+  const { points, maxPossiblePoints, highscore, dispatch } = useQuiz();
+
+  console.log("Total points: " + maxPossiblePoints);
+  const percent = ((100 * points) / maxPossiblePoints).toFixed(1);
 
   let emoji;
 
@@ -15,8 +19,8 @@ function Results({ points, totalPoints, highscore, dispatch }) {
     <>
       <p className="result">
         <span>
-          {emoji} You scored <strong>{points}</strong> out of {totalPoints}{" "}
-          points ({percent}%)
+          {emoji} You scored <strong>{points}</strong> out of{" "}
+          {maxPossiblePoints} points ({percent}%)
         </span>
       </p>
       <p className="highscore">(Highscore: {highscore} points)</p>

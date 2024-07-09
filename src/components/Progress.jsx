@@ -1,10 +1,15 @@
-function Progress({
-  questionInd,
-  numQuestions,
-  points,
-  totalPoints,
-  answerInd,
-}) {
+import { useQuiz } from "../hooks/useContext";
+
+function Progress() {
+  const {
+    index: questionInd,
+    numQuestions,
+    points,
+    maxPossiblePoints,
+    answerInd,
+  } = useQuiz();
+
+  // return <></>;
   return (
     <header className="progress">
       <progress
@@ -15,7 +20,7 @@ function Progress({
         Question <strong>{questionInd + 1}</strong> / {numQuestions}
       </p>
       <p>
-        <strong>{points}</strong> / {totalPoints} points
+        <strong>{points}</strong> / {maxPossiblePoints} points
       </p>
     </header>
   );

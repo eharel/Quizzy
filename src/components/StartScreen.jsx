@@ -1,6 +1,9 @@
 import { ActionTypes } from "../constants/action_types";
+import { useQuiz } from "../hooks/useContext";
 
-function StartScreen({ numQuestions, dispatch }) {
+function StartScreen() {
+  const { numQuestions, dispatch } = useQuiz();
+
   return (
     <div className="start">
       <h2>Welcome to the React Quiz!</h2>

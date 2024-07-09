@@ -1,7 +1,10 @@
+import { useQuiz } from "../hooks/useContext";
 import Options from "./Options";
 
-function Question({ questionObj, questionInd, numQuestions, dispatch }) {
-  const { question, options, correctOption } = questionObj;
+function Question() {
+  const { questions, index: questionInd, dispatch } = useQuiz();
+  // const { question, options, correctOption } = questionObj;
+  const { question, options, correctOption } = questions[questionInd];
 
   return (
     <div>
