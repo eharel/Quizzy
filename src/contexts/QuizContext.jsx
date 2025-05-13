@@ -2,6 +2,8 @@ import { createContext, useEffect, useReducer } from "react";
 import { ActionTypes } from "../constants/action_types";
 import { Status } from "../constants/enums";
 
+import questionsReact from "../data/questions-react.json";
+
 const QuizContext = createContext();
 
 const SECONDS_PER_QUESTION = 30;
@@ -106,13 +108,19 @@ function QuizProvider({ children }) {
   } = state;
 
   useEffect(function () {
-    fetch("http://localhost:8000/questions")
-      .then((res) => res.json())
-      .then((data) =>
-        dispatch({ type: ActionTypes.DATA_RECEIVED, payload: data })
-      )
-      .catch((err) => dispatch({ type: ActionTypes.DATA_FAILED }));
+    const data = questionsReact;
+    console.log("data", data);
+    dispatch({ type: ActionTypes.DATA_RECEIVED, payload: data });
   }, []);
+
+  // useEffect(function () {
+  //   fetch("http://localhost:8000/questions")
+  //     .then((res) => res.json())
+  //     .then((data) =>
+  //       dispatch({ type: ActionTypes.DATA_RECEIVED, payload: data })
+  //     )
+  //     .catch((err) => dispatch({ type: ActionTypes.DATA_FAILED }));
+  // }, []);
 
   return (
     <QuizContext.Provider
