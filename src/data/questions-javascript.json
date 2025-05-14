@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Which of the following is a primitive data type in JavaScript?",
+    "options": ["Object", "Array", "String", "Function"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "What is the output of `typeof null`?",
+    "options": ["'null'", "'object'", "'undefined'", "'boolean'"],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "Which method is used to add elements to the end of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What does `NaN` stand for?",
+    "options": [
+      "Not a Number",
+      "Null and None",
+      "Negative and Null",
+      "None and Null"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which keyword is used to declare a constant in JavaScript?",
+    "options": ["var", "let", "const", "static"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "What is the purpose of the `this` keyword in JavaScript?",
+    "options": [
+      "To refer to the global object",
+      "To refer to the current object",
+      "To refer to the parent object",
+      "To refer to the previous object"
+    ],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "Which operator is used to compare both value and type?",
+    "options": ["==", "===", "!=", "!=="],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "What is the default value of an uninitialized variable in JavaScript?",
+    "options": ["null", "undefined", "0", "NaN"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which method is used to convert a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.convert()",
+      "JSON.objectify()"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "What is the purpose of the `Array.prototype.map()` method?",
+    "options": [
+      "To filter elements in an array",
+      "To transform each element in an array",
+      "To find an element in an array",
+      "To sort elements in an array"
+    ],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "Which of the following is a falsy value in JavaScript?",
+    "options": ["0", "1", "{}", "[]"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the purpose of the `let` keyword in JavaScript?",
+    "options": [
+      "To declare a variable with block scope",
+      "To declare a constant variable",
+      "To declare a global variable",
+      "To declare a variable with function scope"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which method is used to remove the last element from an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "What is the purpose of the `Promise` object in JavaScript?",
+    "options": [
+      "To handle synchronous operations",
+      "To handle asynchronous operations",
+      "To handle errors in synchronous code",
+      "To handle errors in asynchronous code"
+    ],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "Which of the following is not a JavaScript framework?",
+    "options": ["React", "Angular", "Vue", "Django"],
+    "correctOption": 3,
+    "points": 10
+  }
+]

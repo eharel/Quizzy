@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What is the correct file extension for Python files?",
+    "options": [".py", ".python", ".pyt", ".pt"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["function", "def", "func", "lambda"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "How do you insert comments in Python code?",
+    "options": ["//", "#", "/* */", "<!-- -->"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which data type is used to store a sequence of characters in Python?",
+    "options": ["int", "float", "str", "list"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "What is the output of `print(2 ** 3)`?",
+    "options": ["6", "8", "9", "16"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is a mutable data type in Python?",
+    "options": ["tuple", "list", "str", "int"],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "What is the output of `len([1, 2, 3, 4])`?",
+    "options": ["3", "4", "5", "Error"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which keyword is used to create a class in Python?",
+    "options": ["class", "def", "object", "struct"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the output of `print(type(3.14))`?",
+    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'complex'>"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is used to handle exceptions in Python?",
+    "options": ["try-except", "catch-finally", "try-catch", "handle-error"],
+    "correctOption": 0,
+    "points": 20
+  },
+  {
+    "question": "What is the output of `print('Hello' + 'World')`?",
+    "options": ["Hello World", "HelloWorld", "Hello+World", "Error"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is not a Python keyword?",
+    "options": ["pass", "eval", "assert", "loop"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "What is the output of `print(10 // 3)`?",
+    "options": ["3", "3.33", "4", "Error"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which function is used to get user input in Python?",
+    "options": ["input()", "get()", "read()", "scan()"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is a Python framework for web development?",
+    "options": ["Django", "Flask", "Both", "None"],
+    "correctOption": 2,
+    "points": 20
+  }
+]

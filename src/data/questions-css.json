@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which property is used to change the background color of an element?",
+    "options": ["color", "background-color", "bgcolor", "background"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Creative Style Sheets",
+      "Computer Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which CSS property controls the text size?",
+    "options": ["font-style", "text-size", "font-size", "text-style"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which value of the `position` property is used to position an element relative to its nearest positioned ancestor?",
+    "options": ["static", "absolute", "relative", "fixed"],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "Which pseudo-class is used to style an element when the user hovers over it?",
+    "options": [":hover", ":focus", ":active", ":visited"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the default value of the `position` property?",
+    "options": ["static", "relative", "absolute", "fixed"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to change the font of an element?",
+    "options": ["font-family", "font-style", "font-weight", "font-size"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to make text bold?",
+    "options": ["font-style", "font-weight", "text-decoration", "font-family"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to add space inside an element?",
+    "options": ["margin", "padding", "border", "outline"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to add space outside an element?",
+    "options": ["margin", "padding", "border", "outline"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to change the text color of an element?",
+    "options": ["color", "text-color", "font-color", "background-color"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to make an element invisible?",
+    "options": ["visibility", "display", "opacity", "z-index"],
+    "correctOption": 2,
+    "points": 20
+  },
+  {
+    "question": "Which property is used to control the stacking order of elements?",
+    "options": ["z-index", "stack-order", "order", "position"],
+    "correctOption": 0,
+    "points": 20
+  },
+  {
+    "question": "Which property is used to create rounded corners?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "border-style",
+      "border-width"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which property is used to control the transparency of an element?",
+    "options": ["opacity", "visibility", "display", "z-index"],
+    "correctOption": 0,
+    "points": 10
+  }
+]

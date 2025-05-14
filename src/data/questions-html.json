@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language",
+      "Hyper Tool Markup Language"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML tag is used to define the largest heading?",
+    "options": ["<h1>", "<heading>", "<h6>", "<head>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to create a hyperlink?",
+    "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["<break>", "<lb>", "<br>", "<line>"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which attribute is used to specify an image's source?",
+    "options": ["src", "href", "alt", "link"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to define a table row?",
+    "options": ["<tr>", "<td>", "<table>", "<row>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the purpose of the `<title>` element in HTML?",
+    "options": [
+      "To define the main heading",
+      "To specify the document's title in the browser tab",
+      "To create a subtitle",
+      "To define a section title"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to define an unordered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which attribute is used to uniquely identify an HTML element?",
+    "options": ["id", "class", "name", "key"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to embed a video?",
+    "options": ["<video>", "<media>", "<embed>", "<movie>"],
+    "correctOption": 0,
+    "points": 20
+  },
+  {
+    "question": "What is the correct HTML element for playing audio files?",
+    "options": ["<audio>", "<sound>", "<music>", "<media>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to define a form?",
+    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which attribute is used to specify placeholder text in an input field?",
+    "options": ["placeholder", "value", "name", "text"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to define a section in a document?",
+    "options": ["<section>", "<div>", "<article>", "<header>"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which HTML element is used to define emphasized text?",
+    "options": ["<em>", "<strong>", "<i>", "<b>"],
+    "correctOption": 0,
+    "points": 10
+  }
+]
