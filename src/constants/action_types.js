@@ -1,10 +1,11 @@
-export const ActionTypes = Object.freeze({
-  DATA_RECEIVED: "dataReceived",
-  DATA_FAILED: "dataFailed",
-  START_QUIZ: "startQuiz",
-  ADD_POINTS: "addPoints",
-  NEXT_QUESTION: "nextQuestion",
-  ANSWER: "answer",
-  FINISH: "finish",
-  TICK: "tick",
-});
+export const ActionTypes = {
+  DATA_RECEIVED: "DATA_RECEIVED",
+  DATA_FAILED: "DATA_FAILED",
+  START_QUIZ: "START_QUIZ",
+  ANSWER: "ANSWER",
+  ADD_POINTS: "ADD_POINTS",
+  NEXT_QUESTION: "NEXT_QUESTION",
+  FINISH: "FINISH",
+  TICK: "TICK",
+  CHANGE_SUBJECT: "CHANGE_SUBJECT", // New action type
+};

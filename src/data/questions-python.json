@@ -49,7 +49,12 @@
   },
   {
     "question": "What is the output of `print(type(3.14))`?",
-    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'complex'>"],
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'complex'>"
+    ],
     "correctOption": 1,
     "points": 10
   },
