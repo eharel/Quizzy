@@ -2,8 +2,6 @@ import { createContext, useEffect, useReducer } from "react";
 import { ActionTypes } from "../constants/action_types";
 import { Status } from "../constants/enums";
 
-import questionsReact from "../data/questions-react.json";
-
 const QuizContext = createContext();
 
 const SECONDS_PER_QUESTION = 30;
@@ -18,6 +16,7 @@ const initialState = {
   secondsRemaining: 0,
   maxPossiblePoints: 0,
   numQuestions: 0,
+  subject: "react", // Default subject
 };
 
 /* -------------------------------------------------------------------------------------
@@ -32,15 +31,17 @@ function reducer(state, { type, payload }) {
       return {
         ...state,
         status: Status.READY,
-        questions: payload,
-        numQuestions: payload.length,
-        maxPossiblePoints: payload.reduce(
+        questions: payload.questions,
+        numQuestions: payload.questions.length,
+        maxPossiblePoints: payload.questions.reduce(
           (accumulator, currObj) => accumulator + currObj.points,
           0
         ),
       };
     case ActionTypes.DATA_FAILED:
       return { ...state, status: Status.ERROR };
+    case ActionTypes.CHANGE_SUBJECT:
+      return { ...state, subject: payload, status: Status.LOADING };
     case ActionTypes.START_QUIZ:
       return {
         ...state,
@@ -60,8 +61,6 @@ function reducer(state, { type, payload }) {
             ? points + currQuestion.points
             : points,
       };
-    case ActionTypes.ADD_POINTS:
-      return { ...state, points: state.points + payload };
     case ActionTypes.NEXT_QUESTION:
       if (state.index < state.questions.length - 1) {
         return { ...state, index: state.index + 1, answerInd: null };
@@ -95,49 +94,25 @@ function reducer(state, { type, payload }) {
 ------------------------------------------------------------------------------------- */
 function QuizProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const {
-    questions,
-    status,
-    index,
-    points,
-    answerInd,
-    highscore,
-    secondsRemaining,
-    numQuestions,
-    maxPossiblePoints,
-  } = state;
+  const { subject } = state;
 
-  useEffect(function () {
-    const data = questionsReact;
-    console.log("data", data);
-    dispatch({ type: ActionTypes.DATA_RECEIVED, payload: data });
-  }, []);
-
-  // useEffect(function () {
-  //   fetch("http://localhost:8000/questions")
-  //     .then((res) => res.json())
-  //     .then((data) =>
-  //       dispatch({ type: ActionTypes.DATA_RECEIVED, payload: data })
-  //     )
-  //     .catch((err) => dispatch({ type: ActionTypes.DATA_FAILED }));
-  // }, []);
+  useEffect(() => {
+    async function fetchQuestions() {
+      try {
+        const response = await import(`../data/questions-${subject}.json`);
+        dispatch({
+          type: ActionTypes.DATA_RECEIVED,
+          payload: { questions: response.default },
+        });
+      } catch (error) {
+        dispatch({ type: ActionTypes.DATA_FAILED });
+      }
+    }
+    fetchQuestions();
+  }, [subject]);
 
   return (
-    <QuizContext.Provider
-      value={{
-        questions,
-        status,
-        index,
-        points,
-        answerInd,
-        highscore,
-        secondsRemaining,
-        numQuestions,
-        maxPossiblePoints,
-
-        dispatch,
-      }}
-    >
+    <QuizContext.Provider value={{ ...state, dispatch }}>
       {children}
     </QuizContext.Provider>
   );
